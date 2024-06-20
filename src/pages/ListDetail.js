@@ -6,7 +6,7 @@ import Service from "../components/DetailPageComponents/Service"
 import Loader from "../components/Loader"
 import Review from "../components/DetailPageComponents/Review"
 
-const ListDetail = (props) => {
+const ListDetail = () => {
 	const { state } = useLocation()
 	const [loading, setLoading] = useState(false)
 	const detailedItem = items.filter((item) => item.item_id == state)[0]
@@ -18,11 +18,15 @@ const ListDetail = (props) => {
 		) {
 			setLoading(true)
 		}
-		setTimeout(() => {
+		const interval = setTimeout(() => {
 			setLoading(false)
 			sessionStorage.setItem("item_id", state)
 		}, [1000])
-	}, [])
+
+		return () => {
+			clearTimeout(interval)
+		}
+	}, [state])
 
 	if (loading) return <Loader />
 	return (

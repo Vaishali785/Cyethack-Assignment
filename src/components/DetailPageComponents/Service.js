@@ -3,7 +3,7 @@ import React from "react"
 const Service = () => {
 	return (
 		<div className=" px-4">
-			<div className="grid grid-cols-4 gap-2 border-y-[1px] border-[rgba(0,0,0,.1)]  py-10">
+			<div className="grid grid-cols-4 gap-2 border-y-[1px] border-[rgba(0,0,0,.1)]  py-10 place-items-start">
 				{/* <div className="flex-col flex items-center">
 					<span className="bg-gray-200 rounded-full p-3 inline-block w-min">
 						<svg
