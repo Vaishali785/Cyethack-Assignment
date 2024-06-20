@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Frontend Developer Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This project is a frontend application built with React, Redux, React Router DOM, and Tailwind CSS. It includes a simple login/logout functionality, data tables, and detailed views of items. The session management is handled using cookies. All data used in this application is static.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Routing:** Implements routes for dashboard, list, and item details.
+- **Data Tables:** Displays a list of items with brief descriptions.
+- **Item Details:** Shows detailed overview of items.
+- **Session Management:** Includes login/logout functionality using cookies.
+- **State Management:** Uses Redux for managing session state.
+- **Loading Effects:** Shows loading effects while fetching item details.
+- **Responsive Design:** Ensures the application works well on various screen sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Redux (Redux Toolkit)
+- React Router DOM
+- Tailwind CSS
+- Cookies (for session management)
+- Netlify (for deployment)
 
-### `npm test`
+## Setup and Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/your-username/frontend-developer-assignment.git
+   cd frontend-developer-assignment
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install dependencies:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server:**
 
-### `npm run eject`
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. **Build the project:**
+   ```bash
+   npm run build
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage Guide
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Login:**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   - Navigate to the login page.
+   - Enter your credentials and submit the form.
+   - Upon successful login, you will be redirected to the dashboard.
 
-## Learn More
+2. **View List of Items:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   - Navigate to `/list`.
+   - You will see a data table with a list of items.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. **View Item Details:**
 
-### Code Splitting
+   - Click on an item in the list to view its details.
+   - The item details will be fetched and displayed on `/list/details`.
+   - If you navigate back to the list and select the same item, the details will be shown without reloading.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. **Logout:**
+   - Click the logout button to end the session and clear cookies.
 
-### Analyzing the Bundle Size
+## Code Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Routing:**
 
-### Making a Progressive Web App
+   - Configured using `react-router-dom`.
+   - Routes: `/dashboard`, `/list`, `/list/details`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **State Management:**
 
-### Advanced Configuration
+   - Implemented using Redux.
+   - Actions and reducers handle the application state.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+3. **Session Management:**
 
-### Deployment
+   - Login and logout functionalities are managed using cookies.
+   - User session is maintained across different routes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+4. **Loading Effects:**
 
-### `npm run build` fails to minify
+   - Loading effects are shown while fetching item details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Styling:**
+   - Tailwind CSS is used for styling the application.
+
+## Deployment
+
+The application is deployed on Netlify. You can access the deployed app [here](https://your-netlify-app-link.netlify.app).
+
+### Additional Notes
+
+- **Static Data:** All the data used in this application is static and stored within the codebase.
+- **Customization:** You can customize the static data in the source code to meet different requirements.
+- **Tailwind CSS:** Tailwind CSS is used for styling the application, ensuring a consistent and modern look.
