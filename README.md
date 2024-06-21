@@ -20,7 +20,7 @@ This project is a frontend application built with React, Redux, React Router DOM
 - Redux (Redux Toolkit)
 - React Router DOM
 - Tailwind CSS
-- Cookies (for session management)
+- Js-Cookies (for session management)
 - Netlify (for deployment)
 
 ## Setup and Installation
