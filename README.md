@@ -1,4 +1,4 @@
-# Frontend Developer Assignment
+# Cyethack Frontend Developer Assignment
 
 ## Project Overview
 
@@ -48,7 +48,7 @@ This project is a frontend application built with React, Redux, React Router DOM
 
 1. **Login:**
 
-   - Navigate to the login page.
+   - Navigate to the `\login` page.
    - Enter your credentials and submit the form.
    - Upon successful login, you will be redirected to the dashboard.
 
@@ -71,12 +71,12 @@ This project is a frontend application built with React, Redux, React Router DOM
 1. **Routing:**
 
    - Configured using `react-router-dom`.
-   - Routes: `/dashboard`, `/list`, `/list/details`.
+   - Routes: `/dashboard`, `/list`, `/list/details`, `/login`.
 
 2. **State Management:**
 
    - Implemented using Redux.
-   - Actions and reducers handle the application state.
+   - Actions and reducers handle the session state.
 
 3. **Session Management:**
 
