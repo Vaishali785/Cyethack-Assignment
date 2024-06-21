@@ -28,8 +28,8 @@ This project is a frontend application built with React, Redux, React Router DOM
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/frontend-developer-assignment.git
-   cd frontend-developer-assignment
+   git clone https://github.com/Vaishali785/Cyethack-Assignment.git
+   cd Cyethack-Assignment
    ```
 
 2. **Install dependencies:**
@@ -42,11 +42,6 @@ This project is a frontend application built with React, Redux, React Router DOM
 
    ```bash
    npm start
-   ```
-
-4. **Build the project:**
-   ```bash
-   npm run build
    ```
 
 ## Usage Guide
@@ -97,7 +92,7 @@ This project is a frontend application built with React, Redux, React Router DOM
 
 ## Deployment
 
-The application is deployed on Netlify. You can access the deployed app [here](https://your-netlify-app-link.netlify.app).
+The application is deployed on Netlify. You can access the deployed app [here](https://cyethack-assignment.netlify.app/).
 
 ### Additional Notes
 
